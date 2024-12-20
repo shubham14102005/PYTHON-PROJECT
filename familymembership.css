@@ -1,0 +1,183 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a7f6d; /* Dark green header background */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 70px; /* Logo size */
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    padding: 8px 20px;
+    background-color: #ff9f00; /* Orange button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #ff7f00; /* Darker orange on hover */
+}
+
+header .user-options {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333; /* Dark background for nav */
+    color: white;
+    padding: 10px 0;
+    margin-top: 90px; /* Space to avoid overlap with fixed header */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Family Membership Section */
+.family-membership {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 40px; /* Space after navigation */
+}
+
+.membership-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2a7f6d; /* Dark Green */
+}
+
+.membership-header p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.membership-header button {
+    padding: 10px 20px;
+    background-color: #ff9f00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.membership-header button:hover {
+    background-color: #ff7f00;
+}
+
+/* Membership Benefits */
+.membership-benefits {
+    padding: 40px 20px;
+}
+
+.membership-benefits h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.benefit-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    width: 150px;
+    text-align: center;
+}
+
+.benefit-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.benefit-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
