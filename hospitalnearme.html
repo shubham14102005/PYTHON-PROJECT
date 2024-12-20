@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospitals Near Me - Online Pharmacy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hospitalnearme.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="https://via.placeholder.com/150" alt="Pharmacy Logo">
         </div>
+
         <div class="header-right">
             <input type="text" placeholder="Search for medicines or health products">
             <button>Search</button>
@@ -19,32 +22,88 @@
             </div>
         </div>
     </header>
-  <!-- NavBar -->
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="medicines.html">Medicines</a></li>
-            <li><a href="counsultation.html">Consultation</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
             <li><a href="blooddonation.html">Blood Donation</a></li>
-            <!-- <li><a href="#">Offers</a></li> -->
-            <li><a href="healthinsurence.html">Health Insurance</a></li>
+            <li><a href="healthinsurance.html">Health Insurance</a></li>
             <li><a href="hospitalnearme.html">Hospitals Near Me</a></li>
             <li><a href="labtest.html">Lab Tests</a></li>
             <li><a href="familymembership.html">Family Membership</a></li>
         </ul>
     </nav>
-    <section class="page-content">
-        <h1>Find Hospitals Near You</h1>
-        <p>We help you find hospitals and medical centers close to your location for quick assistance.</p>
-        <form>
-            <label for="location">Enter your location or ZIP code:</label>
-            <input type="text" id="location" name="location" placeholder="Enter location">
-            <button type="submit">Search</button>
-        </form>
+
+    <!-- Hospital Near Me Section -->
+    <section class="hospital-near-me">
+        <div class="hospital-header">
+            <h1>Find Hospitals Near You</h1>
+            <p>Search for the nearest hospitals, view ratings, and book appointments.</p>
+        </div>
+
+        <!-- Search Functionality -->
+        <div class="hospital-search">
+            <input type="text" placeholder="Enter your location or city">
+            <button>Find Hospitals</button>
+        </div>
+
+        <!-- Nearby Hospitals List -->
+        <div class="nearby-hospitals">
+            <h3>Nearby Hospitals</h3>
+            <div class="hospital-list">
+                <div class="hospital-item">
+                    <h4>City Hospital</h4>
+                    <p>Location: Downtown</p>
+                    <p>Rating: ⭐⭐⭐⭐ (120 reviews)</p>
+                    <button>View Details</button>
+                    <button>Book Appointment</button>
+                </div>
+                <div class="hospital-item">
+                    <h4>Green Valley Hospital</h4>
+                    <p>Location: Green Lane</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐ (250 reviews)</p>
+                    <button>View Details</button>
+                    <button>Book Appointment</button>
+                </div>
+                <div class="hospital-item">
+                    <h4>Sunrise Medical Center</h4>
+                    <p>Location: Sunset Boulevard</p>
+                    <p>Rating: ⭐⭐⭐ (80 reviews)</p>
+                    <button>View Details</button>
+                    <button>Book Appointment</button>
+                </div>
+                <div class="hospital-item">
+                    <h4>Silver Oak Hospital</h4>
+                    <p>Location: Oak Street</p>
+                    <p>Rating: ⭐⭐⭐⭐ (140 reviews)</p>
+                    <button>View Details</button>
+                    <button>Book Appointment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Services -->
+        <div class="emergency-services">
+            <h3>Emergency Services</h3>
+            <p>If you need immediate medical attention, find emergency services available 24/7 near you.</p>
+            <button>View Emergency Hospitals</button>
+        </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Online Pharmacy. All Rights Reserved.</p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </footer>
+
 </body>
 </html>
