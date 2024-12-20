@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Online Pharmacy</title>
     <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
 </head>
 <body>
-    <div class="container">
-        <form class="login-form">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" required>
-            </div>
-            <button type="submit">Login</button>
-            <p class="message">Don't have an account? <a href="#">Register</a></p>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <img src="images.jfif" alt="E-Health Mate">
+    </div>
+    <div class="header-right">
+        <input type="text" placeholder="Search for medicines or health products">
+        <button>Search</button>
+        <div class="user-options">
+            <span><a href="login.html">Login</a></span> | 
+            <span><a href="cart.html">Cart</a></span>
+        </div>
+    </div>
+</header>
+
+<!-- NavBar -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="medicines.html">Medicines</a></li>
+        <li><a href="consultation.html">Consultation</a></li>
+        <li><a href="blooddonation.html">Blood Donation</a></li>
+        <li><a href="healthinsurance.html">Health Insurance</a></li>
+        <li><a href="hospitalnearme.html">Hospitals Near Me</a></li>
+        <li><a href="labtest.html">Lab Tests</a></li>
+        <li><a href="familymembership.html">Family Membership</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Login to Your Account</h2>
+
+    <!-- Patient Login Option -->
+    <div class="login-option">
+        <h3>Patient Login</h3>
+        <form action="/patient-login" method="POST">
+            <input type="text" name="patient_email" placeholder="Email" required>
+            <input type="password" name="patient_password" placeholder="Password" required>
+            <button type="submit">Login as Patient</button>
         </form>
     </div>
+
+    <!-- Doctor Login Option -->
+    <div class="login-option">
+        <h3>Doctor Login</h3>
+        <form action="/doctor-login" method="POST">
+            <input type="text" name="doctor_email" placeholder="Email" required>
+            <input type="password" name="doctor_password" placeholder="Password" required>
+            <button type="submit">Login as Doctor</button>
+        </form>
+    </div>
+
+    <!-- Additional Links -->
+    <div class="footer-links">
+        <p><a href="#">Forgot Password?</a> | 
+           <a href="#">Create an Account</a></p>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 E-Health Mate. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
-
