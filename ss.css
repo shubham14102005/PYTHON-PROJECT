@@ -1,57 +1,126 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right input[type="text"] {
+    padding: 10px;
     border-radius: 5px;
+    border: none;
+}
+
+.header-right button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+}
+
+.header-right button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.user-options {
+    margin-left: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #343a40; /* Dark background for nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Horizontal list */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    padding: 15px 20px;
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    background-color: #495057; /* Darker on hover */
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-form {
-    width: 300px;
+/* Header Styles */
+h2 {
+    text-align: center;
 }
 
-h2 {
+/* Login Option Styles */
+.login-option {
     margin-bottom: 20px;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.login-option h3 {
+   text-align:center; 
 }
 
-.label {
-    margin-bottom: 5px;
+/* Input Fields Styles */
+input[type="text"], input[type="password"] {
+   width: calc(100% - 22px);
+   padding: 10px; 
+   margin-bottom: 10px; 
+   border-radius: 5px; 
+   border: 1px solid #ddd; 
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
+/* Button Styles */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 3px;
+   width: 100%; 
+   padding: 10px; 
+   background-color: #28a745; 
+   color:white ; 
+   border:none ; 
+   border-radius :5px ; 
+   cursor:pointer ; 
 }
 
 button:hover {
-    background-color: #4cae4c;
+   background-color:#218838 ; 
 }
 
-.message {
-    margin-top: 15px;
+/* Footer Links Styles */
+.footer-links {
+   text-align:center ; 
 }
